@@ -64,9 +64,56 @@
 
               </div>              
             </div>
-            <table>
-                <tr><td>x</td><td>y</td><td>z</td></tr>
-            </table>
+            <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input id="icon_nome" type="text" class="validate" required>
+                      <label for="icon_nome">Nome</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">email</i>
+                      <input id="icon_email" type="text" class="validate" required>
+                      <label for="icon_email">Email</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_fone" type="tel" class="validate" required>
+                        <label for="icon_fone">telefone</label>
+                    </div>
+                    <div class="input-field col s1">
+                        <i class="material-icons prefix">fullscreen_exit</i>
+                    </div>
+                    <div class="chips chips-placeholder chips-autocomplete input-field col s5">
+                    </div>
+                </form>
+              </div>
         </div>
+        <script>
+            $('.chips-placeholder').chips({
+                placeholder: '+Tag',
+                secondaryPlaceholder: '+Tag',
+            });
+            $('.chips-autocomplete').chips({
+                autocompleteOptions: {
+                data: {
+                    'Família': null,
+                    'Trabalho': null,
+                    'Amigos': null,
+                    'Outros': null
+                },
+                limit: Infinity,
+                minLength: 1
+                }
+            });
+    
+            var chip = {
+                tag: 'chip content',
+                image: '', //optional
+            };
+        </script>
     </body>
 </html>
