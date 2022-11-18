@@ -20,11 +20,6 @@ $('.chips-autocomplete').chips({
     }
 });
 
-var chip = {
-    tag: 'chip content',
-    image: '', //optional
-};
-
 var instance = M.Chips.getInstance(document.getElementById('chip1'))
 
 instance.addChip({
