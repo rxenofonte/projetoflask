@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../static/js/main.js"></script>
+        <script type="text/javascript" src="../static/js/materialize.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="../static/css/materialize.css"  media="screen,projection"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto 1</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+              <a href="/" class="brand-logo"><i class="tiny material-icons">all_inclusive</i> Infinity Flask</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="/contato">Contato</a></li>
+                <li><a href="/sobre">Sobre</a></li>
+              </ul>
+            </div>  
+        </nav>   
+        <br>
+        <div style="text-align:right;padding:10px">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">ADICIONAR CONTATO +</a>
+        </div>   
+        <table class="striped">
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Celular</th>
+                <th>#Tags</th>
+                <th>...</th>
+            </tr>
+            <tr>
+                <td>Fulano</td>
+                <td>fulano@gmail.com</td>
+                <td>85-99999-9999</td>
+                <td> 
+                    <div class="chip">
+                        <!--<i class="tiny material-icons">add_shopping_cart</i>-->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_plAQEu0MkVDvpDZGCOozR-YvS-QXPvy4Iii5B6g&s">Família
+                    </div>
+                    <div class="chip">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1374/1374128.png">Família
+                    </div>                   
+                </td>
+                <td>
+                    <a class="waves-effect waves-light btn-small" style="background-color:red"><i class="material-icons right">delete</i>DELETAR</a>
+                    <a class="waves-effect waves-light btn-small" style="background-color:blue"><i class="material-icons right">edit</i>EDITAR</a>
+                </td>
+            </tr>
+        </table>     
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal bottom-sheet">
+            <div class="modal-content">
+              <h4>Adicionar um contato</h4>
+              <div class="modal-footer">
+                <a class="waves-effect waves-light btn-large" style="background-color:blue"><i class="material-icons right">delete</i>ADICIONAR CONTATO +</a>
+                <a class="waves-effect waves-light btn-large" style="background-color:red"><i class="material-icons right">edit</i>LIMPAR CAMPOS X</a>
+
+              </div>              
+            </div>
+            <table>
+                <tr><td>x</td><td>y</td><td>z</td></tr>
+            </table>
+        </div>
+    </body>
+</html>
