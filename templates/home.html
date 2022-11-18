@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script type="text/javascript" src="../static/js/main.js"></script>
-        <script type="text/javascript" src="../static/js/materialize.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>        
+        <script type="text/javascript" src="../static/js/materialize.js"></script>        
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="../static/css/materialize.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="../static/css/materialize.css"  media="screen,projection"/>        
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,9 +58,8 @@
             <div class="modal-content">
               <h4>Adicionar um contato</h4>
               <div class="modal-footer">
-                <a class="waves-effect waves-light btn-large" style="background-color:blue"><i class="material-icons right">delete</i>ADICIONAR CONTATO +</a>
-                <a class="waves-effect waves-light btn-large" style="background-color:red"><i class="material-icons right">edit</i>LIMPAR CAMPOS X</a>
-
+                <a class="waves-effect waves-light btn-large" style="background-color:blue"><i class="material-icons right">delete</i>ADICIONAR CONTATO</a>
+                <a class="waves-effect waves-light btn-large" style="background-color:red"><i class="material-icons right">edit</i>LIMPAR CAMPOS</a>
               </div>              
             </div>
             <div class="row">
@@ -84,36 +82,15 @@
                         <input id="icon_fone" type="tel" class="validate" required>
                         <label for="icon_fone">telefone</label>
                     </div>
-                    <div class="input-field col s1">
-                        <i class="material-icons prefix">fullscreen_exit</i>
-                    </div>
-                    <div class="chips chips-placeholder chips-autocomplete input-field col s5">
-                    </div>
+                    <div class="col s6">                                                
+                        <div class="col s1">
+                            <i class="material-icons prefix">fullscreen_exit</i>
+                        </div>
+                        <div id="chip1" class="chips chips-placeholder chips-autocomplete input-field col s11"></div>
+                    </div>                    
                 </form>
               </div>
         </div>
-        <script>
-            $('.chips-placeholder').chips({
-                placeholder: '+Tag',
-                secondaryPlaceholder: '+Tag',
-            });
-            $('.chips-autocomplete').chips({
-                autocompleteOptions: {
-                data: {
-                    'Família': null,
-                    'Trabalho': null,
-                    'Amigos': null,
-                    'Outros': null
-                },
-                limit: Infinity,
-                minLength: 1
-                }
-            });
-    
-            var chip = {
-                tag: 'chip content',
-                image: '', //optional
-            };
-        </script>
+        <script type="text/javascript" src="../static/js/main.js"></script>        
     </body>
 </html>
